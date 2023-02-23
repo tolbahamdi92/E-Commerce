@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7E87571729A77C1B001E249A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87571629A77C1B001E249A /* AppDelegate.swift */; };
-		7E87571929A77C1B001E249A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87571829A77C1B001E249A /* SceneDelegate.swift */; };
 		7E87571B29A77C1B001E249A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87571A29A77C1B001E249A /* ViewController.swift */; };
 		7E87571E29A77C1B001E249A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E87571C29A77C1B001E249A /* Main.storyboard */; };
 		7E87572029A77C20001E249A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E87571F29A77C20001E249A /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		7E87571329A77C1B001E249A /* E-Commerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-Commerce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E87571629A77C1B001E249A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E87571829A77C1B001E249A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E87571A29A77C1B001E249A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E87571D29A77C1B001E249A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E87571F29A77C20001E249A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,15 +54,70 @@
 		7E87571529A77C1B001E249A /* E-Commerce */ = {
 			isa = PBXGroup;
 			children = (
-				7E87571629A77C1B001E249A /* AppDelegate.swift */,
-				7E87571829A77C1B001E249A /* SceneDelegate.swift */,
-				7E87571A29A77C1B001E249A /* ViewController.swift */,
-				7E87571C29A77C1B001E249A /* Main.storyboard */,
-				7E87571F29A77C20001E249A /* Assets.xcassets */,
-				7E87572129A77C20001E249A /* LaunchScreen.storyboard */,
+				7E87573029A77CDB001E249A /* ViewModel */,
+				7E87572E29A77CC1001E249A /* View */,
+				7E87572F29A77CD3001E249A /* Model */,
+				7E87572A29A77C77001E249A /* Shared */,
+				7E87572B29A77C8F001E249A /* Resources */,
 				7E87572429A77C20001E249A /* Info.plist */,
 			);
 			path = "E-Commerce";
+			sourceTree = "<group>";
+		};
+		7E87572A29A77C77001E249A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7E87571629A77C1B001E249A /* AppDelegate.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		7E87572B29A77C8F001E249A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7E87572C29A77CA5001E249A /* Storyboards */,
+				7E87572D29A77CB3001E249A /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7E87572C29A77CA5001E249A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7E87571C29A77C1B001E249A /* Main.storyboard */,
+				7E87572129A77C20001E249A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7E87572D29A77CB3001E249A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7E87571F29A77C20001E249A /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		7E87572E29A77CC1001E249A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E87571A29A77C1B001E249A /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7E87572F29A77CD3001E249A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7E87573029A77CDB001E249A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +193,6 @@
 			files = (
 				7E87571B29A77C1B001E249A /* ViewController.swift in Sources */,
 				7E87571729A77C1B001E249A /* AppDelegate.swift in Sources */,
-				7E87571929A77C1B001E249A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
