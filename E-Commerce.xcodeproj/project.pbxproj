@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E7A7F8E29A78BAB0088ACAE /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E7A7F8C29A78BAB0088ACAE /* Roboto-Regular.ttf */; };
+		7E7A7F8F29A78BAB0088ACAE /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E7A7F8D29A78BAB0088ACAE /* Roboto-Bold.ttf */; };
 		7E87571729A77C1B001E249A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87571629A77C1B001E249A /* AppDelegate.swift */; };
-		7E87571B29A77C1B001E249A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87571A29A77C1B001E249A /* ViewController.swift */; };
+		7E87571B29A77C1B001E249A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E87571A29A77C1B001E249A /* LoginVC.swift */; };
 		7E87571E29A77C1B001E249A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E87571C29A77C1B001E249A /* Main.storyboard */; };
 		7E87572029A77C20001E249A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E87571F29A77C20001E249A /* Assets.xcassets */; };
 		7E87572329A77C20001E249A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E87572129A77C20001E249A /* LaunchScreen.storyboard */; };
+		7E9FED2929A7DC400051DB1B /* shadow+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9FED2829A7DC400051DB1B /* shadow+UIView.swift */; };
+		7E9FED2B29A7E1920051DB1B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9FED2A29A7E1920051DB1B /* SignUpVC.swift */; };
+		7E9FED2D29A7E1C70051DB1B /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9FED2C29A7E1C70051DB1B /* ResetPasswordVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E7A7F8C29A78BAB0088ACAE /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		7E7A7F8D29A78BAB0088ACAE /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		7E87571329A77C1B001E249A /* E-Commerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-Commerce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E87571629A77C1B001E249A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E87571A29A77C1B001E249A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7E87571A29A77C1B001E249A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		7E87571D29A77C1B001E249A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E87571F29A77C20001E249A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E87572229A77C20001E249A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E87572429A77C20001E249A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E9FED2829A7DC400051DB1B /* shadow+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "shadow+UIView.swift"; sourceTree = "<group>"; };
+		7E9FED2A29A7E1920051DB1B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		7E9FED2C29A7E1C70051DB1B /* ResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E7A7F8B29A78B910088ACAE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7E7A7F8D29A78BAB0088ACAE /* Roboto-Bold.ttf */,
+				7E7A7F8C29A78BAB0088ACAE /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		7E87570A29A77C1B001E249A = {
 			isa = PBXGroup;
 			children = (
@@ -57,8 +76,10 @@
 				7E87573029A77CDB001E249A /* ViewModel */,
 				7E87572E29A77CC1001E249A /* View */,
 				7E87572F29A77CD3001E249A /* Model */,
+				7E9FED2729A7DC1B0051DB1B /* Extensions */,
 				7E87572A29A77C77001E249A /* Shared */,
 				7E87572B29A77C8F001E249A /* Resources */,
+				7E7A7F8B29A78B910088ACAE /* Fonts */,
 				7E87572429A77C20001E249A /* Info.plist */,
 			);
 			path = "E-Commerce";
@@ -101,7 +122,9 @@
 		7E87572E29A77CC1001E249A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7E87571A29A77C1B001E249A /* ViewController.swift */,
+				7E87571A29A77C1B001E249A /* LoginVC.swift */,
+				7E9FED2A29A7E1920051DB1B /* SignUpVC.swift */,
+				7E9FED2C29A7E1C70051DB1B /* ResetPasswordVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -118,6 +141,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7E9FED2729A7DC1B0051DB1B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7E9FED2829A7DC400051DB1B /* shadow+UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +211,8 @@
 			files = (
 				7E87572329A77C20001E249A /* LaunchScreen.storyboard in Resources */,
 				7E87572029A77C20001E249A /* Assets.xcassets in Resources */,
+				7E7A7F8F29A78BAB0088ACAE /* Roboto-Bold.ttf in Resources */,
+				7E7A7F8E29A78BAB0088ACAE /* Roboto-Regular.ttf in Resources */,
 				7E87571E29A77C1B001E249A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,7 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E87571B29A77C1B001E249A /* ViewController.swift in Sources */,
+				7E9FED2B29A7E1920051DB1B /* SignUpVC.swift in Sources */,
+				7E9FED2D29A7E1C70051DB1B /* ResetPasswordVC.swift in Sources */,
+				7E87571B29A77C1B001E249A /* LoginVC.swift in Sources */,
+				7E9FED2929A7DC400051DB1B /* shadow+UIView.swift in Sources */,
 				7E87571729A77C1B001E249A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
