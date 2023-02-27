@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GroupsCollectionViewCell" id="gTV-IL-0wX" customClass="GroupsCollectionViewCell" customModule="E_Commerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="203"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="203"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHy-w6-PzU">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="203"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="be1-et-ngf">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="203"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New collection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8c-2v-d6q">
+                        <rect key="frame" x="31" y="163.33333333333334" width="133" height="23.666666666666657"/>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="be1-et-ngf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="026-CQ-Lvj"/>
+                <constraint firstItem="L8c-2v-d6q" firstAttribute="bottom" secondItem="be1-et-ngf" secondAttribute="bottom" constant="-16" id="4YW-zD-MAk"/>
+                <constraint firstItem="L8c-2v-d6q" firstAttribute="trailing" secondItem="be1-et-ngf" secondAttribute="trailing" constant="-16" id="E1e-yu-DSx"/>
+                <constraint firstAttribute="bottom" secondItem="iHy-w6-PzU" secondAttribute="bottom" id="PkY-SP-92u"/>
+                <constraint firstItem="be1-et-ngf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VQY-JS-7aq"/>
+                <constraint firstAttribute="trailing" secondItem="iHy-w6-PzU" secondAttribute="trailing" id="Xwu-Bg-6xA"/>
+                <constraint firstAttribute="trailing" secondItem="be1-et-ngf" secondAttribute="trailing" id="Xxg-JI-qKf"/>
+                <constraint firstItem="iHy-w6-PzU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ek6-10-mDR"/>
+                <constraint firstAttribute="bottom" secondItem="be1-et-ngf" secondAttribute="bottom" id="tOX-pW-47D"/>
+                <constraint firstItem="iHy-w6-PzU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xGa-58-UxM"/>
+            </constraints>
+            <size key="customSize" width="180" height="203"/>
+            <point key="canvasLocation" x="238.1679389312977" y="73.591549295774655"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Mask Group 2" width="226" height="399"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
