@@ -24,6 +24,9 @@ struct ViewController {
     static let loginVC = "LoginVC"
     static let resetPasswordVC = "ResetPasswordVC"
     static let tabBarControll = "TabBarControll"
+    static let categoryDetailVC = "CategoryDetailVC"
+    static let sortedVC = "SortedVC"
+    static let filterVC = "FilterVC"
 }
 
 //  MARK:- ViewControllerTitle
@@ -68,6 +71,8 @@ struct Cells {
     static let groupsCollectionViewCell = "GroupsCollectionViewCell"
     static let subCategoriesCollectionViewCell = "SubCategoriesCollectionViewCell"
     static let detailCategoryCollectionViewCell = "DetailCategoryCollectionViewCell"
+    static let sortTableViewCell = "SortTableViewCell"
+    static let colorsCollectionViewCell = "ColorsCollectionViewCell"
     
 }
 

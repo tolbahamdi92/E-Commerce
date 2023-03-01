@@ -136,8 +136,9 @@ extension LoginVC {
     
     private func gotoHomeVC() {
         let tabBarControll = UIStoryboard(name: StoryBoard.main, bundle: nil).instantiateViewController(withIdentifier: ViewController.tabBarControll)
-        present(tabBarControll, animated: true)
-        
+        let nav = UINavigationController(rootViewController: tabBarControll)
+        nav.modalPresentationStyle = .overFullScreen
+        present(nav, animated: true)
     }
     
     private func gotoResetPasswordVC() {

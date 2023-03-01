@@ -40,7 +40,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nj9-aO-O2d">
                                 <rect key="frame" x="0.0" y="0.0" width="380" height="137"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="valerie-elash-pFPvIlth4ec-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="w1k-qF-jhg">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eight" translatesAutoresizingMaskIntoConstraints="NO" id="w1k-qF-jhg">
                                         <rect key="frame" x="0.0" y="0.0" width="186" height="137"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="maM-Er-6lt">
@@ -112,9 +112,9 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="eight" width="163" height="112"/>
         <image name="favorite-fill" width="40" height="40"/>
         <image name="stars" width="109.66666412353516" height="23.333333969116211"/>
-        <image name="valerie-elash-pFPvIlth4ec-unsplash" width="163" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

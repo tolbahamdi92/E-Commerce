@@ -15,22 +15,37 @@ class CategoryDetailVC: UIViewController {
     @IBOutlet weak var typeGridBtn: UIButton!
     @IBOutlet weak var detailCategoryCollectionView: UICollectionView!
     
+    private let ItemsImage: [String] = ["one", "two", "three", "four", "five", "six", "seven", "eight"]
+    var categoryName: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
-        typeGridBtn.setImage(UIImage(named: "grid"), for: .normal)
-
+        title = categoryName
+        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     @IBAction func typeGridBtnTapped(_ sender: UIButton) {
-        if typeGridBtn.imageView?.image == UIImage(named: "grid") {
-            typeGridBtn.setImage(UIImage(named: "grid-rows"), for: .normal)
-            isGrid = true
-        } else {
+        if isGrid {
             typeGridBtn.setImage(UIImage(named: "grid"), for: .normal)
             isGrid = false
+        } else {
+            typeGridBtn.setImage(UIImage(named: "grid-rows"), for: .normal)
+            isGrid = true
         }
         detailCategoryCollectionView.reloadData()
+    }
+    
+    @IBAction func sortedBtnTapped(_ sender: UIButton) {
+        let sortedVC = UIStoryboard(name: StoryBoard.main, bundle: nil).instantiateViewController(withIdentifier: ViewController.sortedVC)
+        sortedVC.modalPresentationStyle = .overFullScreen
+        present(sortedVC, animated: true)
+    }
+    
+    @IBAction func filterBtnTapped(_ sender: UIButton) {
+        let filterVC = UIStoryboard(name: StoryBoard.main, bundle: nil).instantiateViewController(withIdentifier: ViewController.filterVC)
+        filterVC.modalPresentationStyle = .overFullScreen
+        present(filterVC, animated: true)
     }
 }
 
@@ -53,7 +68,7 @@ extension CategoryDetailVC: UICollectionViewDelegate, UICollectionViewDataSource
         if collectionView == subCategoriesCollectionView {
             return 5
         } else {
-            return 10
+            return ItemsImage.count
         }
         
     }
@@ -64,6 +79,7 @@ extension CategoryDetailVC: UICollectionViewDelegate, UICollectionViewDataSource
             return cell
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Cells.detailCategoryCollectionViewCell, for: indexPath) as! DetailCategoryCollectionViewCell
+            cell.productImageView.image = UIImage(named: ItemsImage[indexPath.row])
             if isGrid {
                 cell.containerStackView.axis = .vertical
             } else {

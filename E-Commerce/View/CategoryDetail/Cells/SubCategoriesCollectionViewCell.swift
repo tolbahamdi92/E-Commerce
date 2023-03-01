@@ -11,7 +11,7 @@ class SubCategoriesCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var subCategoryView: UIView! {
         didSet {
-            self.subCategoryView.layer.cornerRadius = 10
+            self.subCategoryView.layer.cornerRadius = 5
         }
     }
     

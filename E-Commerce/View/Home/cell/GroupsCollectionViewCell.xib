@@ -26,7 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="180" height="203"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 2" translatesAutoresizingMaskIntoConstraints="NO" id="be1-et-ngf">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="four" translatesAutoresizingMaskIntoConstraints="NO" id="be1-et-ngf">
                         <rect key="frame" x="0.0" y="0.0" width="180" height="203"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New collection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8c-2v-d6q">
@@ -51,11 +51,15 @@
                 <constraint firstItem="iHy-w6-PzU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xGa-58-UxM"/>
             </constraints>
             <size key="customSize" width="180" height="203"/>
+            <connections>
+                <outlet property="categoryImageView" destination="be1-et-ngf" id="1mU-Om-uQY"/>
+                <outlet property="categoryNameLabel" destination="L8c-2v-d6q" id="91I-YP-gK1"/>
+            </connections>
             <point key="canvasLocation" x="238.1679389312977" y="73.591549295774655"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Mask Group 2" width="226" height="399"/>
+        <image name="four" width="163" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

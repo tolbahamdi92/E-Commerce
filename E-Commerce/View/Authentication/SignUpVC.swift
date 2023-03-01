@@ -139,6 +139,9 @@ extension SignUpVC {
     }
     
     private func gotoHomeVC() {
-        
+        let tabBarControll = UIStoryboard(name: StoryBoard.main, bundle: nil).instantiateViewController(withIdentifier: ViewController.tabBarControll)
+        let nav = UINavigationController(rootViewController: tabBarControll)
+        nav.modalPresentationStyle = .overFullScreen
+        present(nav, animated: true)
     }
 }
